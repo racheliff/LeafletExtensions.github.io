@@ -55,7 +55,7 @@ a, li {
   width: 100%;
   padding: 1em 18px;
   display: inline-block;
-  white-space: pre;
+  white-space: nowrap;
   box-sizing: border-box;
 }
 .drop ul li a:hover {

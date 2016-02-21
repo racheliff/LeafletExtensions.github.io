@@ -27,18 +27,18 @@ describe('Unit testing Layer Selector', function () {
             option1: {name: "option 1"},
             option2: {name: "option 2"}
         };
-        $rootScope.item = {option1: {name: "option 1"}};
+        $rootScope.currentTile = "option 1";
         // Compile a the component: ui-leaflet-layers-selector
-        element = $compile('<ui-leaflet-layers-selector items="layersSelectorData" ng-model="item"></ui-leaflet-layers-selector>')($rootScope);
+        element = $compile('<ui-leaflet-layers-selector tilesList="layersSelectorData" currentTile="currentTile"></ui-leaflet-layers-selector>')($rootScope);
         // fire all the watches
         $rootScope.$digest();
     }));
 
-    it('Check if it has 2 values', function () {
+    it('Replaces the element with the appropriate content', function () {
 
-
+        //var item =
         // Check that the compiled element contains the templated content
-        expect(element.find('li').length).toBe(2);
+        //expect(element.find('li').length).toBe(2);
     });
 });
 

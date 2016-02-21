@@ -2,9 +2,16 @@
 
 <div class="nav">
     <li class="drop">
-        <a class="leaflet-control-globe-toggle" href="#" title="change map" ></a>
+        <a class="leaflet-control-globe-toggle"
+           href="#"
+           title="change map" ></a>
         <ul ng-show="layerSelectorCtrl.show"><!--ng-click="layerSelectorCtrl.show = !layerSelectorCtrl.show"ng-if="tile.name"-->
-            <li ng-repeat="tile in layerSelectorCtrl.tilesList" ><a href="#" ng-click="layerSelectorCtrl.selectVal(tile)">{{tile.name}}</a></li>
+            <li ng-repeat="tile in layerSelectorCtrl.tilesList"
+                ng-click="layerSelectorCtrl.switchTile(tile)">
+                <a>
+                    {{tile.name}}
+                </a>
+            </li>
         </ul>
     </li>
 </div>

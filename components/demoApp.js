@@ -66,7 +66,6 @@ myApp.component('demoContent', {
 
 myApp.run(['$templateCache', function ($templateCache) {
     $templateCache.put('leafletLayersSelector', '<leaflet lf-center="demoContentCtrl.meta.center" \
-        tiles="demoContentCtrl.meta.tilesDict[demoContentCtrl.meta.tiles]"\
         defaults="demoContentCtrl.meta.defaults"\
         flex\
         height="100%">\
@@ -130,8 +129,8 @@ myApp.service('demoService', [function () {
                         }
                     },
                     center: {
-                        lat: 51.505,
-                        lng: -0.09,
+                        lat: 31.59,
+                        lng: 120.29,
                         zoom: 8
                     },
                     tiles: 'OpenStreetMap_DE'
