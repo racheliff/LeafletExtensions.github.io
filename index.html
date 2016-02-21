@@ -1,53 +1,27 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Leafletextensions.GitHub.io by racheliff</title>
+<!DOCTYPE html>
+<html ng-app="leafletExtensionsDemo">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Load CSS !-->
+    <link rel="stylesheet" href="index.css"/>
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/github-light.css">
-    <script src="javascripts/scale.fix.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1 class="header">Leafletextensions.GitHub.io</h1>
-        <p class="header">Leaflet Extensions</p>
+    <!--Load 3rd party Scripts-->
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.min.js"></script>
+    <script src="bower_components/angular-aria/angular-aria.min.js"></script>
+    <script src="bower_components/angular-messages/angular-messages.min.js"></script>
+    <script src="bower_components/angular-material/angular-material.min.js"></script>
+    <script src="bower_components/leaflet/dist/leaflet.js"></script>
+    <script src="bower_components/angular-simple-logger/dist/angular-simple-logger.min.js"></script>
+    <script src="bower_components/ui-leaflet/dist/ui-leaflet.js"></script>
 
-        <ul>
-          <li class="download"><a class="buttons" href="https://github.com/racheliff/LeafletExtensions.github.io/zipball/master">Download ZIP</a></li>
-          <li class="download"><a class="buttons" href="https://github.com/racheliff/LeafletExtensions.github.io/tarball/master">Download TAR</a></li>
-          <li><a class="buttons github" href="https://github.com/racheliff/LeafletExtensions.github.io">View On GitHub</a></li>
-        </ul>
+    <!-- Load app scripts -->
+    <script src="components/demoApp.js"></script>
 
-        <p class="header">This project is maintained by <a class="header name" href="https://github.com/racheliff">racheliff</a></p>
-
-
-      </header>
-      <section>
-        <h3>
-<a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
-
-<h3>
-<a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://help.github.com/articles/basic-writing-and-formatting-syntax/#mentioning-users-and-teams" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor’s GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out our <a href="https://help.github.com/pages">documentation</a> or <a href="https://github.com/contact">contact support</a> and we’ll help you sort it out.</p>
-      </section>
-      <footer>
-        <p><small>Hosted on <a href="https://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
-      </footer>
-    </div>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-		
-  </body>
+    <!-- Load the extensions -->
+    <script src="components/layerSelector/layerSelector.js"></script>
+</head>
+<body layout="row">
+    <leaflet-extensions-demo-app flex layout="column"></leaflet-extensions-demo-app>
+</body>
 </html>

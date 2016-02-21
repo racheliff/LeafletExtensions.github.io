@@ -1,0 +1,16 @@
+/* 3rd party css */
+@import url("bower_components/leaflet/dist/leaflet.css");
+@import url("bower_components/angular-material/angular-material.min.css");
+@import url("bower_components/angular-material/angular-material.layouts.min.css");
+
+/* our css */
+@import url("components/layerSelector/layerSelector.css");
+@import url("components/demoApp.css");
+html, body, #demoWrapper{
+    height: 100%;
+}
+
+md-sidenav{
+    position: relative;
+}
+

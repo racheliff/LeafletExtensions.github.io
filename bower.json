@@ -1,0 +1,32 @@
+{
+  "name": "leafletExtensions",
+  "authors": [
+    "racheli <racheliff@gmail.com>"
+  ],
+  "description": "Extending leaflet for linnovate's demo",
+  "main": "index.html",
+  "moduleType": [],
+  "keywords": [
+    "leaflet",
+    "angular"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "jasmine-core": "~2.4.1",
+    "angular-material": "~1.0.5",
+    "angular-mocks": "~1.5.0",
+    "angular": "~1.5.0"
+  },
+  "dependencies": {
+    "ui-leaflet": "~1.0.0"
+  }
+}

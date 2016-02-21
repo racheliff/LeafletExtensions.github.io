@@ -1,0 +1,14 @@
+demo-menu{
+    background-color: #222;
+}
+.list-item-extension{
+    color: #999;
+    padding: .3rem 1.25rem;
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: 1rem;
+}
+.list-item-extension:hover {
+    background: #151515;
+    color: #fff;
+    cursor: pointer;
+}
