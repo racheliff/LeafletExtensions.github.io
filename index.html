@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Load CSS !-->
     <link rel="stylesheet" href="index.css"/>
+    <link rel="stylesheet" href="bower_components/ui-leaflet/dist/leaflet.draw.css" />
 
     <!--Load 3rd party Scripts-->
     <script src="bower_components/angular/angular.js"></script>
@@ -12,14 +13,49 @@
     <script src="bower_components/angular-messages/angular-messages.min.js"></script>
     <script src="bower_components/angular-material/angular-material.min.js"></script>
     <script src="bower_components/leaflet/dist/leaflet.js"></script>
+    <script src="bower_components/leaflet/leaflet.ChineseTmsProviders.js"></script>
     <script src="bower_components/angular-simple-logger/dist/angular-simple-logger.min.js"></script>
+    <script src="bower_components/lodash/lodash.js"></script>
+
     <script src="bower_components/ui-leaflet/dist/ui-leaflet.js"></script>
+
+    <script src="bower_components/ui-leaflet/dist/Leaflet.draw.js"></script>
+
+    <script src="bower_components/ui-leaflet/src/edit/handler/Edit.Poly.js"></script>
+    <script src="bower_components/ui-leaflet/src/edit/handler/Edit.SimpleShape.js"></script>
+    <script src="bower_components/ui-leaflet/src/edit/handler/Edit.Circle.js"></script>
+    <script src="bower_components/ui-leaflet/src/edit/handler/Edit.Rectangle.js"></script>
+
+    <script src="bower_components/ui-leaflet/src/draw/handler/Draw.Feature.js"></script>
+    <script src="bower_components/ui-leaflet/src/draw/handler/Draw.Polyline.js"></script>
+    <script src="bower_components/ui-leaflet/src/draw/handler/Draw.Polygon.js"></script>
+    <script src="bower_components/ui-leaflet/src/draw/handler/Draw.SimpleShape.js"></script>
+    <script src="bower_components/ui-leaflet/src/draw/handler/Draw.Rectangle.js"></script>
+    <script src="bower_components/ui-leaflet/src/draw/handler/Draw.Circle.js"></script>
+    <script src="bower_components/ui-leaflet/src/draw/handler/Draw.Marker.js"></script>
+
+    <script src="bower_components/ui-leaflet/src/ext/TouchEvents.js"></script>
+    <script src="bower_components/ui-leaflet/src/ext/LatLngUtil.js"></script>
+    <script src="bower_components/ui-leaflet/src/ext/GeometryUtil.js"></script>
+    <script src="bower_components/ui-leaflet/src/ext/LineUtil.Intersect.js"></script>
+    <script src="bower_components/ui-leaflet/src/ext/Polyline.Intersect.js"></script>
+    <script src="bower_components/ui-leaflet/src/ext/Polygon.Intersect.js"></script>
+
+    <script src="bower_components/ui-leaflet/src/Control.Draw.js"></script>
+    <script src="bower_components/ui-leaflet/src/Tooltip.js"></script>
+    <script src="bower_components/ui-leaflet/src/Toolbar.js"></script>
+
+    <script src="bower_components/ui-leaflet/src/draw/DrawToolbar.js"></script>
+    <script src="bower_components/ui-leaflet/src/edit/EditToolbar.js"></script>
+    <script src="bower_components/ui-leaflet/src/edit/handler/EditToolbar.Edit.js"></script>
+    <script src="bower_components/ui-leaflet/src/edit/handler/EditToolbar.Delete.js"></script>
 
     <!-- Load app scripts -->
     <script src="components/demoApp.js"></script>
 
     <!-- Load the extensions -->
     <script src="components/layerSelector/layerSelector.js"></script>
+    <script src="components/layersEditor/layersEditor.js"></script>
 </head>
 <body layout="row">
     <leaflet-extensions-demo-app flex layout="column"></leaflet-extensions-demo-app>

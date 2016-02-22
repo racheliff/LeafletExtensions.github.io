@@ -38,8 +38,8 @@ a, li {
   top: 97px;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  -webkit-transform: scale(0);
-  transform: scale(0);
+ /* -webkit-transform: scale(0);
+  transform: scale(0);*/
   -webkit-transform-origin: 0 0;
   transform-origin: 0 0;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16), 0 2px 8px 0 rgba(0, 0, 0, 0.12);
@@ -58,15 +58,35 @@ a, li {
   white-space: nowrap;
   box-sizing: border-box;
 }
-.drop ul li a:hover {
+
+.drop ul li a:hover, .drop ul li a.selected {
   background: #ddd;
   color: #040404 !important;
   font-weight: bold;
 }
-.drop:hover ul {
+.drop ul li a.selected {
+  background: #c0c0c0;
+  /*color: white !important;*/
+}
+.drop ul li a.selected:hover {
+ /* background: #c0c0c0;*/
+  color: #686868 !important;
+}
+
+
+.hidden-div:hover ul{
+  visibility: hidden;
+  transition: 0.2s 1s;
+}
+/*.drop ul:hover{
   -webkit-transform: scale(1);
   transform: scale(1);
-}
+}*/
+/*
+.drop:after {
+  visibility: hidden;
+  transition: 0.2s 1s;
+}*/
 
 .leaflet-control-globe-toggle {
   background-image: url(images/globe-colors.png);

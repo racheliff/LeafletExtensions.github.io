@@ -1,14 +1,16 @@
-<!-- ui-leaflet-selector template -->
+<!-- ui-leaflet-selector template layerSelectorCtrl.show = !layerSelectorCtrl.show-->
 
 <div class="nav">
     <li class="drop">
         <a class="leaflet-control-globe-toggle"
            href="#"
-           title="change map" ></a>
-        <ul ng-show="layerSelectorCtrl.show"><!--ng-click="layerSelectorCtrl.show = !layerSelectorCtrl.show"ng-if="tile.name"-->
-            <li ng-repeat="tile in layerSelectorCtrl.tilesList"
+           title="change map"
+           ng-click="layerSelectorCtrl.openLayersList()"
+        ></a>
+        <ul ng-show="layerSelectorCtrl.show">
+            <li ng-repeat="tile in layerSelectorCtrl.unionLayers"
                 ng-click="layerSelectorCtrl.switchTile(tile)">
-                <a>
+                <a ng-class="{selected: tile.name == layerSelectorCtrl.currentTile}">
                     {{tile.name}}
                 </a>
             </li>
